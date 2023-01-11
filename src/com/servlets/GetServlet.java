@@ -13,7 +13,7 @@ public class GetServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //The get parameter are used adding the '?' after the reqPath
+        //The get parameter is used adding the '?' after the reqPath
         String val = req.getParameter("name");
         String htmlResponse = "<html><h3>Welcome to Servlets!</h3></html>";
         PrintWriter writer = resp.getWriter();
